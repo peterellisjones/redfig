@@ -17,7 +17,7 @@ To initialize the client:
 Optionally pass redis parameters (as you'd pass to [redis-rb](https://github.com/redis/redis-rb)):
 
     require 'redfig'
-    $Redfig ||= Redfig.new app: 'my_awesome_app', env: 'development', redis: {host: localhost, port: 6379}
+    $Redfig ||= Redfig.new app: 'my_awesome_app', env: 'development', redis: {host: 'localhost', port: 6379}
 
 Import settings from yml files. They MUST be formatted like this:
 

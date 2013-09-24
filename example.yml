@@ -1,0 +1,23 @@
+# example yml file
+
+# FORMAT
+
+# environment:
+#   app:
+#     namespace:
+#       key: value
+
+default:
+  default:
+    db:
+      host: dev.db.example.com
+      user: user
+      password: secret
+prod:
+  default:
+    db:
+      host: prod.db.example.com
+  site:
+    db:
+      user: "another_user"
+      password: "another_password"

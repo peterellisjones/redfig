@@ -1,7 +1,7 @@
 Redfig
 ======
 
-Redis-backed configuration management library for Ruby. Useful when you have a bunch of different apps and services running in different environments, that all need to share configuration parameters (like db settings or API keys etc)
+Redis-backed configuration management library for Ruby. Useful when you have a bunch of different apps and services running in different environments, that all need to share configuration parameters (like db settings or API keys etc).
 
 ## Usage
 

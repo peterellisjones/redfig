@@ -48,13 +48,13 @@ class Redfig
     end
 
     key = "#{@prefix}:#{env}:#{app}:#{identifier}"
-    puts "KEY: #{key}"
+    puts "KEY: #{key}" if @verbose
 
     @redis.set key, val
   end
 
   def get! identifier
-    puts "- Getting #{identifier}"
+    puts "- Getting #{identifier}" if @verbose
 
     # need to fetch four keys, in order of priority
     # alternatively can just glob.. glob???
@@ -95,7 +95,7 @@ class Redfig
       raise "type not recognized: #{file.class.name}"
     end
 
-    puts "- Iterating over keys in #{_file.inspect}"
+    puts "- Iterating over keys in #{_file.inspect}" if @verbose
     
     # iterate over keys
     YAML::load(_file).each do |env, env_hash|
